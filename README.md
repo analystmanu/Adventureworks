@@ -11,18 +11,14 @@ This repository demonstrates a **scalable cloud data pipeline** using **Azure Da
 **Tables**
 1. **AdventureWorks_Calendar** – Dates, holidays, fiscal info
 2. **AdventureWorks_Customers** – Customer details, demographics
-
 3. **AdventureWorks_Product_Categories** – Categories of products
-
 4. **AdventureWorks_Products / product** – Product details, descriptions, pricing
-
 5. **Product_Subcategories** – Subcategories of products
-
 6. **AdventureWorks_Returns** – Returned orders, reasons
-
 7. **AdventureWorks_Sales_2015 / 2016 / 2017** – Yearly sales data
-
 8. **AdventureWorks_Territories** – Sales territories and regions
+
+
 
 - **Data Source:** GitHub API (repositories, commits, contributors)  
 - **Pipeline Orchestration:** **Azure Data Factory**  
