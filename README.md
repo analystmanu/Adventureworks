@@ -20,7 +20,7 @@ This repository demonstrates a **scalable cloud data pipeline** using **Azure Da
 7. **AdventureWorks_Sales_2015 / 2016 / 2017** – Yearly sales data
 8. **AdventureWorks_Territories** – Sales territories and regions
 
-
+**TechStack**
 
 - **Data Source:** GitHub API (repositories, commits, contributors)  
 - **Pipeline Orchestration:** **Azure Data Factory**  
