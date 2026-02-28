@@ -10,10 +10,14 @@ This repository demonstrates a **scalable cloud data pipeline** using **Azure Da
 
 - **Data Included:**
 
-Sales: Orders, salespersons, sales territories, customers
-Production: Products, categories, product models
-Human Resources: Employees, departments, jobs
-Person: Customers, addresses, contact info
+**Sales:** Orders, salespersons, sales territories, customers
+
+**Production:** Products, categories, product models
+
+**Human Resources:** Employees, departments, jobs
+
+**Person:** Customers, addresses, contact info
+
 - **Data Source:** GitHub API (repositories, commits, contributors)  
 - **Pipeline Orchestration:** **Azure Data Factory**  
 - **Data Storage:** **Azure Data Lake Storage** with **Parquet format**  
