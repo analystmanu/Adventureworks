@@ -32,4 +32,4 @@ This repository demonstrates a **scalable cloud data pipeline** using **Azure Da
 
 ---
 
-## Repo Structure
+
