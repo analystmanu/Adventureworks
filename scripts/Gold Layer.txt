@@ -1,0 +1,91 @@
+--CREATE VIEW CALENDER
+
+
+CREATE VIEW gold.calender
+AS
+SELECT
+    *
+    from 
+    openrowset(
+        BULK 'https://storagepond.dfs.core.windows.net/silver/AdventureWorks_calender/',
+        format = 'PARQUET'
+    ) as quer1
+
+--CREATE VIEW CUSTOMER
+
+
+CREATE VIEW gold.customers
+AS
+SELECT
+    *
+    from 
+    openrowset(
+        BULK 'https://storagepond.dfs.core.windows.net/silver/AdventureWorks_customers/',
+        format = 'PARQUET'
+    ) as quer1
+
+--CREATE VIEW PRODUCTS
+
+
+CREATE VIEW gold.products
+AS
+SELECT
+    *
+    from 
+    openrowset(
+        BULK 'https://storagepond.dfs.core.windows.net/silver/AdventureWorks_products/',
+        format = 'PARQUET'
+    ) as quer1
+
+--CREATE VIEW Returns
+
+
+CREATE VIEW gold.returns
+AS
+SELECT
+    *
+    from 
+    openrowset(
+        BULK 'https://storagepond.dfs.core.windows.net/silver/AdventureWorks_returns/',
+        format = 'PARQUET'
+    ) as quer1
+
+--CREATE VIEW CALENDER
+
+
+CREATE VIEW gold.sales
+AS
+SELECT
+    *
+    from 
+    openrowset(
+        BULK 'https://storagepond.dfs.core.windows.net/silver/AdventureWorks_sales/',
+        format = 'PARQUET'
+    ) as quer1
+
+
+--CREATE VIEW SUBCATEGORIES
+
+
+CREATE VIEW gold.subcategories
+AS
+SELECT
+    *
+    from 
+    openrowset(
+        BULK 'https://storagepond.dfs.core.windows.net/silver/AdventureWorks_subcategories/',
+        format = 'PARQUET'
+    ) as quer1
+
+--CREATE VIEW territories
+
+
+CREATE VIEW gold.territories
+AS
+SELECT
+    *
+    from 
+    openrowset(
+        BULK 'https://storagepond.dfs.core.windows.net/silver/AdventureWorks_territories/',
+        format = 'PARQUET'
+    ) as quer1
