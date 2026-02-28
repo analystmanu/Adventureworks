@@ -7,9 +7,9 @@ This repository demonstrates a **scalable cloud data pipeline** using **Azure Da
 ## Project Overview
 - **Dataset:** Adventure Works
 -AdventureWorks is a Microsoft database simulating a retail company selling bicycles and accessories. It’s widely used for SQL practice, ETL pipelines, data analysis, and BI projects.
+
 **Tables**
 1. **AdventureWorks_Calendar** – Dates, holidays, fiscal info
-
 2. **AdventureWorks_Customers** – Customer details, demographics
 
 3. **AdventureWorks_Product_Categories** – Categories of products
