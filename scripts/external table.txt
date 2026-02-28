@@ -1,0 +1,42 @@
+CREATE DATABASE SCOPED CREDENTIAL cred_MANU
+WITH IDENTITY = 'MANAGED IDENTITY'
+ 
+ CREATE EXTERNAL DATA SOURCE source_silver
+ WITH
+(
+    LOCATION = 'https://storagepond.dfs.core.windows.net/silver',
+    CREDENTIAL = cred_MANU
+)
+
+ CREATE EXTERNAL DATA SOURCE source_gold
+ WITH
+(
+    LOCATION = 'https://storagepond.dfs.core.windows.net/gold',
+    CREDENTIAL = cred_MANU
+)
+
+CREATE external file format format_parquet
+WITH
+(
+    format_type = parquet,
+    DATA_COMPRESSION = 'org.apache.hadoop.io.compress.SnappyCodec'
+)
+
+
+
+---- Create External table Extsales
+
+CREATE EXTERNAL TABLE gold.extsales
+WITH
+(
+    Location = 'extsales', 
+    DATA_SOURCE = SOURCE_GOLD,
+    FILE_FORMAT = FORMAT_PARQUET
+)
+AS
+SELECT * FROM GOLD.SALES
+
+SELECT * FROM GOLD.EXTSALES
+
+
+
